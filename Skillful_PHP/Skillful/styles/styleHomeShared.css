@@ -1,0 +1,96 @@
+#themeButton{
+    z-index: 1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logoBox{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+#title{
+    margin: 0;
+    font-size: 40px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid var(--textcolor);
+    background-color: var(--windowbg);
+    z-index: 21;
+    position: relative;
+}
+
+#rightHeader{
+    display: flex;
+    align-items: center;
+}
+
+#pfp{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--textcolor);
+}
+
+.pfp{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--textcolor);
+}
+
+#optionsBar a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+#options{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#optionsBar{
+    position: absolute;
+    top: 102px;
+    z-index: 2;
+    user-select: none;
+    cursor: default;
+    float: right;
+    right: -1000px;
+    width: fit-content;
+    border-left: 2px solid var(--textcolor);
+    border-bottom: 2px solid var(--textcolor);
+    background-color: var(--windowbg);
+}
+
+#optionsBar img{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#optionsBar h3{
+    margin-right: 20px;
+}

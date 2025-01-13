@@ -1,0 +1,91 @@
+#backHome{
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+#searchBar{
+    margin: 20px;
+    height: 40px;
+}
+
+#searchButton{
+    background: none;
+    border: none;
+    width: 38px;
+    height: 38px;
+}
+
+#searchForm{
+    display: flex;
+    align-items: center;
+}
+
+#bar{
+    width: 20%;
+    height: 35px;
+    font-size: 25px;
+    border: 2px solid var(--textcolor);
+    background-color: var(--windowbg);
+    border-radius: 3px;
+    color: var(--textcolor);
+    margin-right: 10px;
+}
+
+.pfp{
+    border-radius: 50%;
+    border: 2px solid var(--textcolor);
+}
+
+#results{
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 1720px) and (min-width: 1400px){
+    #results{
+        grid-template-columns: repeat(4, 300px);
+    }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 1050px){
+    #results{
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+
+@media only screen and (max-width: 1049px) and (min-width: 720px){
+    #results{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media only screen and (max-width: 719px){
+    #results{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+.userResult{
+    padding: 20px;
+    border: 2px solid var(--textcolor);
+    background-color: var(--windowbg);
+    cursor: pointer;
+}
+
+.userResult h2, .userResult h5{
+    margin: 0;
+}
+
+.userResult img{
+    width: 100px;
+    height: 100px;
+}

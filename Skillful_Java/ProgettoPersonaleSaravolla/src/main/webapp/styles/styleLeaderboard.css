@@ -1,0 +1,42 @@
+#leaderboard{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.leaderboardResult{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--windowbg);
+    border: 2px solid var(--textcolor);
+    padding: 6px;
+    text-decoration: none;
+    color: var(--textcolor);
+    margin: 10px;
+}
+
+.leaderboardResult p{
+    margin: 0;
+    font-size: 25px;
+}
+
+.username{
+    text-decoration: none;
+    color: var(--textcolor);
+    font-size: 25px;
+    margin: 0;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+.left p{
+	width: 40px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}

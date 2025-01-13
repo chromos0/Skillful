@@ -1,0 +1,146 @@
+#themeButton{
+    position: absolute;
+    right: 0;
+}
+
+#homeButton{
+    background: none;
+    border: none;
+}
+
+#mainContainer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+#pfp{
+    display: flex;
+}
+
+#profilePic{
+    border: 2px solid var(--textcolor);
+    border-radius: 50%;
+}
+
+.box{
+    background-color: var(--windowbg);
+    border: 2px solid var(--textcolor);
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#editButton, #closeEditMenu{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#editProfile{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background-color: var(--windowbg);
+    border: 2px solid var(--textcolor);
+    border-radius: 6px;
+    z-index: 2;
+    padding: 20px;
+}
+
+#preview{
+    border-radius: 50%;
+    border: 2px solid var(--textcolor);
+}
+
+#customization{
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    justify-content: space-between;
+}
+
+.textarea{
+    border: 1px solid var(--textcolor);
+    color: var(--textcolor);
+    border-radius: 3px;
+    background-color: var(--boxbg);
+}
+
+.button{
+    background-color: var(--boxbg);
+    border: 1px solid var(--textcolor);
+    color: var(--textcolor);
+    border-radius: 3px;
+}
+
+#updateButton{
+    font-size: 30px;
+}
+
+#themeButton{
+    width: fit-content;
+    height: 50px;
+}
+
+#results{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    column-gap: 50px;
+    row-gap: 50px;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1000px){
+    #results{
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
+@media only screen and (max-width: 999px){
+    #results{
+        grid-template-columns: repeat(1, 350px);
+    }
+}
+
+.courseResult{
+    padding: 20px;
+    border: 2px solid var(--textcolor);
+    border-radius: 6px;
+    background-color: var(--boxbg);
+    cursor: pointer;
+}
+
+.courseResult h2, .courseResult h5{
+    margin: 0;
+}
+
+.courseThumbnail{
+    width: 240px;
+    height: 135px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid var(--textcolor);
+    border-radius: 3px;
+}
+
+.courseDiv{
+    position: relative;
+}
+
+.verifiedIcon{
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+}

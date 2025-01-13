@@ -1,0 +1,228 @@
+body{
+    padding: 20px;
+}
+
+.box{
+    position: relative;
+    border: 2px solid var(--textcolor);
+    border-radius: 6px;
+    width: 70%;
+    padding: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--windowbg);
+    margin-bottom: 10px;
+}
+
+#thumbnail{
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 512px;
+    height: 288px;
+    border: 2px solid var(--textcolor);
+    border-radius: 4px;
+}
+
+#chapterSelector{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.comment{
+    position: relative;
+    border: 2px solid var(--textcolor);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: var(--boxbg);
+    border-radius: 4px;
+}
+
+.userPfp{
+    border-radius: 50%;
+    border: 2px solid var(--textcolor);
+}
+
+#commentsAreaContainer input{
+    width: 20%;
+    height: 30px;
+    font-size: 25px;
+    background-color: var(--boxbg);
+    color: var(--textcolor);
+    border: 2px solid var(--textcolor);
+    border-radius: 4px;
+}
+
+label{
+    font-size: 25px;
+}
+
+select{
+    font-size: 25px;
+    background-color: var(--boxbg);
+    border: 1px solid var(--textcolor);
+    color: var(--textcolor);
+    border-radius: 3px;
+}
+
+#submitComment{
+    font-size: 25px;
+    background-color: var(--boxbg);
+    border: 1px solid var(--textcolor);
+    color: var(--textcolor);
+    border-radius: 3px;
+}
+
+#comments{
+    margin-top: 20px;
+}
+.comment h4{
+    margin-bottom: 0;
+}
+
+.userInfo{
+    display: flex;
+    height: fit-content;
+}
+
+.userInfo h2, .userInfo h3{
+    margin: 0;
+}
+
+.infoContainer{
+    margin-left: 20px;
+}
+
+#editButton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.editButtons{
+    width: 50px;
+    height: 50px;
+}
+
+#editButtonsContainer{
+    position: absolute;
+    top: 0;
+    right: -90px;
+    border: 2px solid var(--textcolor);
+    border-radius: 4px;
+    padding: 10px;
+    background-color: var(--windowbg);
+}
+
+#confirmDeleteContainer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    border: 2px solid var(--textcolor);
+    border-radius: 6px;
+    padding: 40px;
+    background-color: var(--windowbg);
+}
+
+#yes{
+    background: none; 
+    border: none; 
+    box-shadow: none; 
+    color: var(--textcolor); 
+    font-size: 15px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+#confirmDeleteContainer h2{
+    margin: 0;
+}
+
+#options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectChapterButton{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid var(--textcolor);
+    background-color: var(--boxbg);
+    border-radius: 3px;
+}
+.selectChapterButton *{
+    margin: 0;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+#chapters{
+    position: relative;
+    display: grid;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    grid-template-columns: repeat(15, 54px);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+@media only screen and (max-width: 1590px) and (min-width: 1050px){
+    #chapters{
+        grid-template-columns: repeat(10, 54px);
+    }
+}
+
+@media only screen and (max-width: 1049px) and (min-width: 0px){
+    #chapters{
+        grid-template-columns: repeat(5, 54px);
+    }
+}
+
+#presentation{
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.answer{
+    margin: 0;
+    margin-left: 10px;
+}
+
+#submitAnswersButton{
+    font-size: 35px;
+    background-color: var(--boxbg);
+    border: 1px solid var(--textcolor);
+    color: var(--textcolor);
+    border-radius: 3px;
+}
+
+#themeButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#homeButton{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h4{
+    margin: 0;
+    width: fit-content;
+}
+li{
+    display: flex;
+}

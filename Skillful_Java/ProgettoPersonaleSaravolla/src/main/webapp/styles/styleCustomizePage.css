@@ -1,0 +1,40 @@
+#mainContainer{
+    background-color: var(--boxbg);
+    border: 2px solid var(--textcolor);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    width: 50%;
+}
+
+#preview{
+    border: 2px solid var(--textcolor);
+    border-radius: 50%;
+}
+
+#customization{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea{
+    border: 1px solid var(--textcolor);
+    color: var(--textcolor);
+    border-radius: 3px;
+    background-color: var(--boxbg);
+}
+
+.button{
+    background-color: var(--boxbg);
+    border: 1px solid var(--textcolor);
+    color: var(--textcolor);
+    border-radius: 3px;
+}
+
+#confirm{
+    font-size: 30px;
+    background: none;
+    color: var(--textcolor);
+    margin-top: 20px;
+}

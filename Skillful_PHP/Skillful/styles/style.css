@@ -1,0 +1,62 @@
+:root{
+    --primary: #171717;
+    --textcolor: #f0f8ff;
+    --windowbg: #09002e;
+    --boxbg: #270042;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--textcolor);
+    background-color: var(--primary);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.clickableBoxLink{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.edit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#welcomeContainer{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 40px;
+    border: 2px solid var(--textcolor);
+    border-radius: 5px;
+    background-color: var(--windowbg);
+    font-size: 40px;
+}
+
+#welcomeContainer a{
+    color: var(--textcolor);
+}
+
+#alreadyWelcomePage{
+    font-size: 15px;
+}
+
+#alreadyWelcomePage a{
+    font-size: 25px;
+}
+
+.cursorPointer:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
